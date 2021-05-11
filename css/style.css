@@ -1,0 +1,259 @@
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+#navbar
+{
+    /* position: absolute; */
+    background-color: black;
+    position: fixed; 
+    width: 100%;
+    z-index:2;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    padding: 1rem;
+    
+}
+#navbar ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 1rem;
+}
+#navbar ul li a:hover{
+  color: blue;
+}
+/* #dropdown-icon:hover{
+    color:blue;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown:hover .dropdown-content {display: block;} */
+#search-icon
+{
+    color:white;
+    margin-left:50rem;
+}
+#dropdown-icon
+{
+    color:white;
+}
+#slideshow img{
+    width:100%;
+    height:100vh;
+}
+.mySlides
+{
+    position: relative;
+}
+.text-over-slideshow
+{
+    display: none;
+    position: absolute;
+    bottom:20%;
+    text-align: center;
+    width: 100%;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+#description
+{
+    background: white;
+    width:100%;
+    padding:2rem;
+    height:120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#description>p{
+    text-align: left;
+    margin-left:10rem;
+    margin-right:10rem;
+}
+ #description >h1, h6, p{
+    margin-top:1.5rem;
+} 
+.card-container
+{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width:20%;
+    /* justify-content: space-evenly; */
+}
+.card > img{
+    margin-top:1rem;
+    height:50%;
+    border-radius: 1rem;   /* rounding corners of image  */
+}
+#description
+{
+    background:rgba(0,0,0,0.5);
+}
+#description h1{
+    font-size: 2rem;
+}
+#description h6{
+    font-size: 1rem;
+}
+span{
+    color:rgb(3, 112, 112);
+    float:right;
+    padding:0.2rem;
+}
+#tour-dates
+{
+    background: black;
+    width:100%;
+    height:120vh;
+    color:white;
+    text-align: center;
+}
+.tour-info
+{
+    padding-top:2rem;
+}
+.tour-info ul
+{
+    list-style: none;
+    padding: 1rem;
+}
+.tour-info li
+{
+    text-align: left;
+    padding: 0.5rem;
+    background: white;
+    color:black;
+    border:black;
+    border-width: 0.2rem;
+    border-color: black;
+    border-style:solid;
+    width:75%;
+    margin:auto;
+}
+.card-container
+{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+}
+.tour-card
+{
+    width: 20%;
+    height:70vh;
+    text-align: center;
+    padding: 1rem;
+    background: white;
+    color: black;
+    border-radius:1rem;
+}
+.tour-card > img
+{
+    width:100%;
+    height:60%;
+    border-radius: 5vh;  
+}
+.tour-card > button
+{
+    background: cyan;
+    margin-top: 1rem;
+    padding:0.5rem;
+    border-radius: 1rem;
+}
+/* Adding background Image in contact section and shadow to that image  */
+#contact
+{
+    position:relative; 
+    width:100%;
+    background:  linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0)),url(../img/map.jpg); /*../ is used for parent folder we have to use it always like this*/
+    background-size: cover;
+    height: 100vh;
+}
+/* Adding another div with class contact in top of the background image that is why i have used position absolute and z-index-2 plus giving that a color radiant and transparency */
+.contact-div
+{
+    position: absolute;
+    top:15%;
+    left:30%;
+    z-index:2;
+    font-size:2rem;
+    width:500px;
+    height:500px;
+    background: linear-gradient(to right, rgba(194, 42, 42, 0.5),rgba(245, 107, 117,0.5));
+    border-radius: 2rem;
+    text-align: center;
+}
+.contact-child
+{
+    margin-top:2rem;
+}
+.contact-fafa-icon{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+       font-size:1.3rem;  
+}
+.form-input{
+    border-radius:1rem; 
+    width:80%;
+    height:5vh; 
+    margin-left:5vh; 
+    margin-right:5vh;
+    margin-top:1rem;
+    padding:2vh;
+    border-color: rgb(255, 0, 191);
+} 
+/* designing of button in the form */
+.form-button
+{
+    border-radius:1rem; 
+    width:50%;
+    height:5vh; 
+    margin-left:5vh; 
+    margin-right:5vh;
+    margin-top:1rem;
+    padding:0.5rem,0.5rem,0.5rem,0.5rem;
+    border-color: rgb(255, 0, 98);
+    background: rgb(236, 183, 194);
+}
+.social-media-handles
+{
+    width:100%;
+    padding:0.2rem;
+    height:15vh;
+    background: rgb(238, 211, 192);
+    position: relative;
+}
+.fafa
+{
+   position: absolute;
+   top:50%;
+   left:45%;
+}
+.fafa i{
+    margin:0.2rem;
+}
+
